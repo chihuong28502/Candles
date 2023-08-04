@@ -1,0 +1,22 @@
+@media ( min-width: 64em) {
+    
+}
+
+@media ( min-width: 46.25em) and( max-width: 64em) {}
+
+
+/* mobile */
+
+@media ( max-width: 46.1875em)and ( min-width: 0px) {
+.header-nav-item{
+    display: none;
+}
+.header-nav-item:first-child{
+    display: flex;
+}
+}
+
+
+
+@media ( max-width: 64em) {
+}
