@@ -47,14 +47,18 @@
     font-size: 1.8rem;
     font-weight: 300;
 }
+
 .subnav-list{
     position: absolute;
+    background-color: transparent;
     top: 100%;
     min-width: 20rem;
     left: -1.6rem;
     border-left: 3px solid #ebebeb;
     display: none;
     padding-top: 0.8rem;
+    animation: growDown 0.3s ease-in-out forwards;
+    transform-origin: top center;
 }
 .header-nav-item:hover .subnav-list{
     display: block;
@@ -71,6 +75,7 @@
 }
 .slider{
     background-color: #dbdbdb;
+    
 }
 .header-icon{
     cursor: pointer;
@@ -81,4 +86,19 @@
 .slider-item img {
     cursor: grab;
     object-fit: cover;
+}
+.banner-cate{
+    max-width: 1110px;
+    
+}
+.banner-cate-item{
+    padding: 0 0.4rem;
+    
+}
+.banner-cate-item a img {
+    border-radius: 2%;
+}
+.banner-cate-item:hover img{
+    transform: scale(1.02) ;
+    
 }
