@@ -16,4 +16,14 @@ function scrollFunction() {
     }
 }
 
+var productFronts = document.querySelectorAll(".product-front");
+var productBack = document.querySelectorAll(".product-back");
+    // productFronts.forEach(function(productFront, index){
+    //     productFront.onclick = function(e){
+    //         e.target.classList.add('d-none')
+            
+    //     }
+    // })
+    
+
 
