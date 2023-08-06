@@ -98,9 +98,17 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header-login justify-content-end d-flex col-2">
-                    <a href="" class="header-icon">
+                <div class="header-login justify-content-end col-2 d-flex align-items-center">
+                    <a  class="header-icon search-icon position-relative">
                         <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="formSearch position-absolute search-onclick  end-0" style="display: none;">
+                                <form action="/search" class="position-relative">
+                                    <input class="rounded-0" name="q" type="text" placeholder="Search...">
+                                    <button class="btn position-absolute p-0 end-0" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                </form>
+                            </div>
                     </a>
                     <a  class="header-icon">
                         <i class="fa-regular fa-circle-user"></i>
@@ -148,7 +156,7 @@
                         <h1 class=" m-0 py-4 py-md-5 text-uppercase">NEW ARRIVALS</h1>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <div class="product-list row w1110px ">
+                        <div class="product-list row container ">
                             <div class="col-3">
                                 <div class="m-5 col product-item">
                                     <div class="product-img">

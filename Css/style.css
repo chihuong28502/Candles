@@ -123,3 +123,31 @@
     text-align: center;
     z-index: 1;
 }
+
+/* search */
+.search-onclick  {
+    outline: none;
+    background: rgba(255,255,255,0.35);
+    padding: 0.8rem;
+    color: #fff;
+    top: -2rem;  box-sizing: border-box;
+
+    display: none;
+    font-size: 1.5rem;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.search-onclick button i{
+    padding: 4px;
+}
+.search-onclick button{
+    font-size: 1.5rem;
+}
+.search-onclick input{
+    border: 1px solid #e5e5e5;
+    font-size: 1.5rem;
+    padding: 4px 4px;        
+    outline: none;
+}
+

@@ -24,6 +24,17 @@ var productBack = document.querySelectorAll(".product-back");
             
     //     }
     // })
-    
+
+var searchEvent = document.querySelector(".search-icon")
+    searchEvent.onclick = function(){
+        document.querySelector('.fa-magnifying-glass').classList.add('d-none')
+        document.querySelector(".search-onclick").classList.add('d-flex')
+    }
+    var header = document.querySelector(".slider")
+    header.onclick = function(){
+        document.querySelector('.fa-magnifying-glass').classList.remove('d-none')
+        document.querySelector(".search-onclick").classList.remove('d-flex')
+    }
+
 
 
