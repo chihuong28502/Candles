@@ -20,7 +20,7 @@
     margin: 0 2rem;
     cursor: pointer;
     position: relative;
-    margin: 0 24px;
+    margin: 0 2.4rem;
 }
 .header-nav-item:hover::before{
     display: block;
@@ -32,7 +32,7 @@
     bottom: 0;
     left: -0.5rem;
     right: -0.5rem;
-    height: 2px;
+    height: 0.2rem;
     background: #fff;
     display: none;
 }
@@ -131,7 +131,6 @@
     padding: 0.8rem;
     color: #fff;
     top: -2rem;  box-sizing: border-box;
-
     display: none;
     font-size: 1.5rem;
     transition: 0.4s ease-in-out;
@@ -139,7 +138,7 @@
 }
 
 .search-onclick button i{
-    padding: 4px;
+    padding: 0.4rem;
 }
 .search-onclick button{
     font-size: 1.5rem;
@@ -147,7 +146,50 @@
 .search-onclick input{
     border: 1px solid #e5e5e5;
     font-size: 1.5rem;
-    padding: 4px 4px;        
+    padding: 0.4rem;        
     outline: none;
 }
+.product-description p{
+    color: red;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+/* footer */
+.footer-contain p{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.footer-item{
+    margin: 3px 0;
+}
+.footer-item a{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.footer-item button{
+    border: none!important;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-top-right-radius:2px ;
+    border-bottom-right-radius:2px ;
+    padding: 0.4rem ;
+}
+
+.footer-item input{
+    outline: none;
+    padding: 0.4rem;
+    border: none;
+    border-top-left-radius:2px ;
+    border-bottom-left-radius:2px ;
+}
+.list-item-social a{
+    font-size: 2rem;
+}
+.footer-item:hover a{
+    opacity: 0.3;
+}
+.footer-item .label-send-email{
+    font-size: 1.2rem;
+}
+
 
