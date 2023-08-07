@@ -1,0 +1,55 @@
+.login{
+    
+    margin: auto;
+    padding-top: 7rem;
+    text-align: center;
+}
+.form h2{
+    color: #000;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.login{
+    position: relative;
+}
+.list-getInfo input{
+    outline: none;
+    padding: 10px 16px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    border: 1px solid #cfcdcd;
+    margin-bottom: 2rem;
+}
+.login::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ccc;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-form{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 1.8rem;
+    border-radius: 12px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+.login-equal{
+    font-size: 1.3rem;
+}
+.login-equal i {
+    font-size: 1.8rem;
+}
+.form-login{
+
+}

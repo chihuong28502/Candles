@@ -22,7 +22,37 @@
     padding-left: 0!important;
     padding-right: 0!important;
 }
-
+.form-login::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: #060606;
+    height: 2px;
+    left: 50%;
+    margin-top: 2rem;
+    transform: translateX(-50%);
+}
+.login::after{
+    display: none;
+}
+.login{
+    margin-bottom: 5rem;
+}
+.form-login ,.formsign-in{
+    width: 100%;
+}
+.form-login{
+    
+}
+.formsign-in{
+    margin-top: 5rem;
+}
+.footer-col p{
+    margin-top: 1rem;
+}
+.footer-col{
+    padding-bottom: 0!important;
+}
 }
 
 
