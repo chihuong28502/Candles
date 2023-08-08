@@ -53,6 +53,8 @@ $(document).ready(function(){
   $('.slide-product-list').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
+      infinity: false,
+
       arrows: true,
       vertical: true,
       verticalSwiping: true,

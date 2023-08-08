@@ -34,7 +34,7 @@ var productBack = document.querySelectorAll(".product-back");
 
     const clickTarget =() => {
         body.onclick =(e) => {
-            console.log(e.target.classList.value)
+            // console.log(e.target.classList.value)
             if(e.target.classList.value.includes('fa-magnifying-glass') || e.target.classList.value.includes('my_check')){
                 document.querySelector('.fa-magnifying-glass').classList.add('d-none');
                 document.querySelector(".formSearch").classList.add('d-block');
@@ -49,9 +49,86 @@ var productBack = document.querySelectorAll(".product-back");
         }
     }
     clickTarget()
+    // choice Size
+    const clickSize = document.querySelectorAll('.none-active')
+    const clickSizeLength = clickSize.length;
+    clickSize.forEach((element)=>{
+        element.onclick = (click)=>{
+                let removeSelectSize = document.querySelector('.none-active.active-size')
+                removeSelectSize.classList.remove('active-size')
+                click.target.classList.add('active-size')
+            }
+        
+    });
+
+    const numbersQuantity = document.querySelector('#quantity');
+    const numbersQuantityValue = document.querySelector('#quantity').textContent;
+    
+    const addNumbersQuantity = document.querySelectorAll('.add-quantity')
+    const subNumbersQuantity = document.querySelectorAll('.sub-quantity')
+    var quantity = parseInt(numbersQuantityValue)
+    
+    addNumbersQuantity.forEach((element)=>{
+        
+        element.onclick = ()=>{
+            quantity++;
+            numbersQuantity.innerHTML = `${quantity}`;
+        }
+        
+    });
+    subNumbersQuantity.forEach((element)=>{
+        element.onclick = ()=>{
+            if(quantity < 1){
+                quantity=0;
+                
+            }else{
+                quantity--;
+            }
+            numbersQuantity.innerHTML = `${quantity}`;
+        }
+        
+    });
     
 
+    // addNumbersQuantity.onclick = ()=>{
+    //     var quantity = parseInt(numbersQuantityValue)
+    //     quantity.forEach(()=>{
 
+    //         quantity++;
+            
+    //         numbersQuantity.innerHTML = `${quantity}`
+    //     })
+        
+    // }
+    // $('.add-quantity').click(function(){
+    //         var quantity = $(this).siblings('span').text();
+    //         quantity = parseInt(quantity)+1;
+    //         $(this).siblings('span').text(quantity);
+        
+    // })
+    // $('.sub-quantity').click(function(){
+    //     var quantity = $(this).siblings('span').text();
+    //     if(quantity <1){
+    //         quantity = 0
+    //     }else{
+    //         quantity = parseInt(quantity)-1;
+    //     }
+    //     $(this).siblings('span').text(quantity);
+    
+    // })
+    
+// 
+    // 
+    // {
+    //     clickSize[i].onclick = (e)=>{
+    //         let removeSelectSize = document.querySelector('.none-active.active-size')
+    //         removeSelectSize.classList.remove('active-size')
+    //         e.target.classList.add('active-size')
+    //     }
+    // }
+
+
+    
     // render products list
 //     var listProducts = [
 //         {

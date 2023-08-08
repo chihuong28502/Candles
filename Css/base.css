@@ -16,3 +16,10 @@ btn:hover{
     
     color: #000;
 }
+.active-size{
+    background-color: #e0e0e0!important;
+}
+.none-active{
+    background-color: #fff;
+    cursor: pointer;
+}
