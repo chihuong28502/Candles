@@ -64,16 +64,26 @@ $(document).ready(function(){
         {
           breakpoint: 1024,
           settings: {
+            arrows: true,
             slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: true,
+            vertical: false,
+            verticalSwiping: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            
           }
         },
         {
           breakpoint: 600,
           settings: {
-            arrows: false,
+            arrows: true,
             vertical: false,
             slidesToShow: 5,
             slidesToScroll: 1,
@@ -83,8 +93,10 @@ $(document).ready(function(){
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            arrows: false,
+            vertical: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
           }
         }
         // You can unslick at a given breakpoint now by adding:

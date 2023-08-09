@@ -60,13 +60,11 @@ var productBack = document.querySelectorAll(".product-back");
             }
         
     });
-
+// + - products
     const numbersQuantity = document.querySelector('#quantity');
-    const numbersQuantityValue = document.querySelector('#quantity').textContent;
-    
     const addNumbersQuantity = document.querySelectorAll('.add-quantity')
     const subNumbersQuantity = document.querySelectorAll('.sub-quantity')
-    var quantity = parseInt(numbersQuantityValue)
+    var quantity = parseInt(numbersQuantity.textContent)
     
     addNumbersQuantity.forEach((element)=>{
         
@@ -89,7 +87,7 @@ var productBack = document.querySelectorAll(".product-back");
         
     });
 // 
-    // click show iamge model
+    // click show image model
     const imgAllModel = document.querySelectorAll('.slide-product-item img')
     imgAllModel.forEach((element)=>{
         element.onclick= (item) =>{

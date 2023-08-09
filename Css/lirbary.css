@@ -1,9 +1,8 @@
 .slick-dots{
     position: absolute;
-    bottom: 0;
+    bottom: -2%;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
     display: flex!important;
     align-items: center;
     justify-content: center;

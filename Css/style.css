@@ -16,7 +16,6 @@
 .header-nav-item{
     display: flex;
     align-items: center;
-    height: 100%;
     margin: 0 2rem;
     cursor: pointer;
     position: relative;
@@ -38,6 +37,7 @@
 }
 .header-nav-item a{
     color: #fff;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.75px;
 }
@@ -190,6 +190,9 @@
 }
 .footer-item .label-send-email{
     font-size: 1.2rem;
+}
+.logo-footer{
+    display: none;
 }
 
 

@@ -1,5 +1,4 @@
 .login{
-    
     margin: auto;
     padding-top: 7rem;
     text-align: center;
@@ -52,4 +51,7 @@
 }
 .form-login{
 
+}
+.bar-respon{
+    display: none;
 }
