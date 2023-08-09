@@ -119,10 +119,10 @@
             </div>
         </header>
         <!-- header -->
-        <div class="mx-auto container product row justify-content-between">
-            <div class="col-7 row">
+        <div class="mx-auto container w-75 product row justify-content-between">
+            <div class="product-show-slider col-7 row pe-5">
                 <div class="col-3 text-center slide-product-list">
-                    <div class="slide-product-item ">
+                    <div class="slide-product-item">
                         <img class="w-100" src="../img/img-product/model-1.jpg" alt="">
                     </div>
                     <div class="slide-product-item ">
@@ -138,16 +138,16 @@
                         <img class="w-100" src="../img/img-product/product-back.jpeg" alt="">
                     </div>
                 </div>
-                <div class="col-9">
-                    <div class="">
-                        <img class="w-100 h-75" src="../img/img-product/product-front.jpeg" alt="">
+                <div class="col-9 mx-auto rps-h-37">
+                    <div class="img-show">
+                        <img class="w-100 " src="../img/img-product/product-front.jpeg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="product-show-img col-5 ps-5">
                 <div class="product-description-detail">
                     <div class="description-head mb-4">
-                        <h3 class="mb-4">Candles Holiday Tshirt</h3>
+                        <h3 class="mb-4 name-product">Candles Holiday Tshirt</h3>
                         <p>Mã hàng : TS0046</p>
                         <p class="price-product text-black fw-bold">410,000 VNĐ</p>
                     </div>
@@ -168,7 +168,7 @@
                             </div>
                         </div>
                         <div class="btn-order  w-100 mb-5">
-                            <button class="w-100 border-0 bg-black text-white" type="button">Add to cart</button>
+                            <button data-bs-toggle="offcanvas" data-bs-target="#demo" class=" add-product w-100 border-0 bg-black text-white" type="button">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
         <!-- footer -->
         <div class="container-fluid bg-black">
             <div class="footer-contain container row justify-content-between m-auto text-light flex-wrap py-md-5 pb-3">
-                <div class="footer-col col-3 pb-4">
+                <div class="mx-auto footer-col col-3 pb-4">
                     <p>CANDLES</p>
                     <ul>
                         <li class="footer-item">
@@ -279,6 +279,23 @@
                 </div>
             </div>
         </div>
+
+        <div class="px-4 offcanvas offcanvas-end" id="demo">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">   
+                <div class="cart-title">
+                    <h2 class=" mb-4 cart-title">Giỏ hàng</h2>
+                    <p>Sản phẩm bao gồm: </p>
+                    <hr style="height: 2px;">
+                </div>
+                
+                
+            </div>
+        </div>
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             
         <script

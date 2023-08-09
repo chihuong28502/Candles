@@ -59,34 +59,37 @@ $(document).ready(function(){
       vertical: true,
       verticalSwiping: true,
       prevArrow:"<button  type='button' class='icon-slider-product-up slick-prev pull-left'><i class='fa-solid fa-chevron-up' aria-hidden='true'></i></button>",
-      nextArrow:"<button  type='button' class='icon-slider-product-down slick-next pull-right'><i class='fa-solid fa-angle-down' aria-hidden='true'></i></button>"
-      // responsive: [
-      //     {
-      //       breakpoint: 1024,
-      //       settings: {
-      //         slidesToShow: 3,
-      //         slidesToScroll: 3,
-      //         infinite: true,
-      //         dots: true
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 600,
-      //       settings: {
-      //         slidesToShow: 2,
-      //         slidesToScroll: 2
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 480,
-      //       settings: {
-      //         slidesToShow: 1,
-      //         slidesToScroll: 1
-      //       }
-      //     }
-      //     // You can unslick at a given breakpoint now by adding:
-      //     // settings: "unslick"
-      //     // instead of a settings object
-      //   ]
+      nextArrow:"<button  type='button' class='icon-slider-product-down slick-next pull-right'><i class='fa-solid fa-angle-down' aria-hidden='true'></i></button>",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            arrows: false,
+            vertical: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
   });
 });

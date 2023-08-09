@@ -1,16 +1,21 @@
 .product{
     margin: 7rem 0;
-    width: 100rem;
+    /* width: 100rem; */
     
 }
 .slide-product-list{
     height: fit-content;
 }
 .slide-product-item img{
+    cursor: pointer;
+    border-radius: 2rem;
     padding: 1rem;
 }
+.img-show img{
+    border-radius: 1rem;
+}
 .icon-slider-product-up{
-    padding:3px 16px;
+    padding:0.3rem 1.6rem;
     background-color: #f4f4f4;
     border: none;
     outline: none;
@@ -23,7 +28,7 @@
     
 }
 .icon-slider-product-down{
-    padding:3px 16px;
+    padding:0.3rem 1.6rem;
     background-color: #f4f4f4;
     border: none;
     outline: none;
@@ -42,9 +47,9 @@
 #quantity{
     border: 1px solid rgb(204, 204, 204);
     padding: 4px 0;
-    font-size: 14px;
-    height: 30px;
-    width: 45px;
+    font-size: 1.4rem;
+    height: 3rem;
+    width: 4.5rem;
 }
 .description-head h3{
     text-align: left;
@@ -60,11 +65,11 @@
     font-size: 1.8rem;
 }
 .list-size a{
-    margin-right: 4px;
+    margin-right: 0.4rem;
     font-weight: 700;
     color: #000;
     border: 1px solid #ccc;
-    padding: 4px 12px;
+    padding: 0.4rem 1.2rem;
     font-size: 1.4rem;
 }
 .box-quantity label{
@@ -72,8 +77,9 @@
 }
 .quantity-products label{
     border: 1px solid rgb(204, 204, 204);
-    padding: 0.7px 15.6px;
+    padding: 0.7px 1.56rem;
     font-size: 1.8rem;
+    cursor: pointer;
 }
 .box-quantity label:first-child{
     border-right: none;
@@ -82,11 +88,52 @@
     border-left: none;
 }
 .btn-order button{
-    padding: 10px 0;
+    padding: 1rem 0;
     font-size: 1.4rem;
     font-weight: 500;
 }
 .btn-order:hover button{
     background-color: rgb(158, 8, 8)!important;
 }
+.cart-quantity span{
+
+}
+.cart-quantity label{
+    border: 1px solid rgb(204, 204, 204);
+    padding: 0px 0.8rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+#quantity-cart{
+    border: 1px solid rgb(204, 204, 204);
+    padding: 4px 0;
+    font-size: 1.4rem;
+    height: 2.85rem;
+    width: 2.4rem;
+}
+.cart-title p{
+    font-size: 1.8rem;
+}
+.model-cart {
+    
+}
+.cart-body p{
+    font-size: 1.6rem;
+}
+.cart-content{
+border-bottom: 1px solid #000;
+}
+.cart-size{
+    color: red;
+    font-weight: 500;
+}
+.cart-title h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: red;
+}
+.cart-name{
+    font-size: 1.5rem;
+}
+
 

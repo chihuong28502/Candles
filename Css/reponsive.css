@@ -53,6 +53,20 @@
 .footer-col{
     padding-bottom: 0!important;
 }
+
+.product-show-slider , 
+.product-show-img,
+.slide-product-list{
+    width: 100%!important;
+}
+.product-show-slider{
+    flex-direction: column-reverse!important;
+    justify-content: center!important;
+    padding: 0!important;
+}
+.rps-h-37 {
+    height: 37rem!important;
+}
 }
 
 

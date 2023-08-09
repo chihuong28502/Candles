@@ -88,47 +88,77 @@ var productBack = document.querySelectorAll(".product-back");
         }
         
     });
-    
-
-    // addNumbersQuantity.onclick = ()=>{
-    //     var quantity = parseInt(numbersQuantityValue)
-    //     quantity.forEach(()=>{
-
-    //         quantity++;
-            
-    //         numbersQuantity.innerHTML = `${quantity}`
-    //     })
-        
-    // }
-    // $('.add-quantity').click(function(){
-    //         var quantity = $(this).siblings('span').text();
-    //         quantity = parseInt(quantity)+1;
-    //         $(this).siblings('span').text(quantity);
-        
-    // })
-    // $('.sub-quantity').click(function(){
-    //     var quantity = $(this).siblings('span').text();
-    //     if(quantity <1){
-    //         quantity = 0
-    //     }else{
-    //         quantity = parseInt(quantity)-1;
-    //     }
-    //     $(this).siblings('span').text(quantity);
-    
-    // })
-    
 // 
-    // 
-    // {
-    //     clickSize[i].onclick = (e)=>{
-    //         let removeSelectSize = document.querySelector('.none-active.active-size')
-    //         removeSelectSize.classList.remove('active-size')
-    //         e.target.classList.add('active-size')
-    //     }
-    // }
-
-
+    // click show iamge model
+    const imgAllModel = document.querySelectorAll('.slide-product-item img')
+    imgAllModel.forEach((element)=>{
+        element.onclick= (item) =>{
+            var src = item.target.getAttribute('src')
+            document.querySelector('.img-show').innerHTML = ` <img class="w-100" src="${src}" alt="">`
+            
+        }
+    })
+// 
+    const btnAddProduct = document.querySelector('.add-product');
     
+    
+        btnAddProduct.onclick = ()=>{
+            var nameProduct = document.querySelector('.name-product').textContent;
+            var sizeProduct = document.querySelector('.none-active.active-size').textContent;
+            var quantityProduct = document.querySelector('#quantity').textContent;
+
+            var bodyCart = document.querySelector('.offcanvas-body')
+            bodyCart.innerHTML = bodyCart.innerHTML +`
+            <div  class="cart-content w-100 mt-2">
+                <div class="cart-body">
+                    <div class="row justify-content-between align-items-center">
+                        <p class="col-8 cart-name">${nameProduct}</p>
+                        <p class="col-4 cart-size text-end pe-5">${sizeProduct}</p>
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-3">
+                            <img class="w-100" src="../img/img-product/product-front.jpeg" alt="">
+                        </div>
+                        <div class="col-9 d-flex  justify-content-end">
+                            <div class="cart-quantity d-flex align-items-center">
+                                <label class="sub-quantity-cart  text-center">-</label>
+                                <span id="quantity-cart" class="text-center" name="quantity" >${quantityProduct}</span>
+                                <label class="add-quantity-cart  text-center b">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cart-price">390,000 VNĐ</p>
+                </div>
+            </div>
+            `;
+            const numbersQuantityCart = document.querySelector('#quantity-cart');
+            const addNumbersQuantityCart = document.querySelectorAll('.add-quantity-cart')
+            const subNumbersQuantityCart = document.querySelectorAll('.sub-quantity-cart')
+            const numbersQuantityCartValue = document.querySelector('#quantity-cart').textContent;
+            var  quantityCart = parseInt(numbersQuantityCartValue)
+            addNumbersQuantityCart.forEach((element)=>{
+                element.onclick = ()=>{
+                    quantityCart++;
+                    numbersQuantityCart.innerHTML = `${quantityCart}`;
+                }
+            });
+            subNumbersQuantityCart.forEach((element)=>{
+                element.onclick = ()=>{
+                    if(quantityCart < 1){
+                        quantityCart=0;
+                        
+                    }else{
+                        quantityCart--;
+                    }
+                    numbersQuantityCart.innerHTML = `${quantityCart}`;
+                }
+                
+            });
+        }
+ 
+        // + quantity cart products
+        
+    // 
     // render products list
 //     var listProducts = [
 //         {
