@@ -18,13 +18,12 @@
 @media ( max-width: 992px) {
     .header{
         height: auto;
+        padding: 1.2rem ;
     }
     .header-nav{
         display: none!important;
     }
-    .align-items-center{
-        width: auto;
-    }
+    
 }
 
 /* mobile */
@@ -56,14 +55,39 @@
     .login{
         margin-bottom: 5rem;
     }
+    
 }
 
 @media ( max-width: 991px) and ( min-width: 0px) {
+    .btn-menu-res {
+        font-size: 2rem;
+    }
+    .subnav-list a {
+        display: block;
+    }
+    .header-nav-modal a{
+        color: black;
+        font-size: 1.8rem;
+    }
+    .subnav-list {
+        background-color: #fff;
+        position: absolute;
+        background-color: transparent;
+        top: 100%;
+        
+        left: 5%;
+        border-left: 3px solid #ebebeb;
+        display: none;
+        padding-top: 0.8rem;
+        animation: growDown 0.3s ease-in-out forwards;
+        transform-origin: top center;
+    }
     .product-show-slider{
         flex-direction: column-reverse!important;
         justify-content: center!important;
         padding: 0!important;
     }
+    
 
 }
 @media ( max-width: 46.1875em)and ( min-width: 0px) {
