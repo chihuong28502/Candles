@@ -11,9 +11,7 @@
     }
 }
 @media ( min-width: 768px) and ( max-width: 1400px) {
-    .bar-respon{
-        display: none!important;
-    }
+    
 }
 @media ( max-width: 992px) {
     .header{
@@ -23,13 +21,21 @@
     .header-nav{
         display: none!important;
     }
+    .bar-respon{
+        display: block;
+    }
     
 }
 
 /* mobile */
 @media ( max-width: 767.5px) {
+    .icon-responsive-none{
+        display: none;
+    }
+    .search-icon{
+        margin: 0!important;
+    }
     .bar-respon{
-        width: auto!important;
         display: block;
     }
     .footer-contain{
@@ -58,7 +64,7 @@
     
 }
 
-@media ( max-width: 991px) and ( min-width: 0px) {
+@media ( max-width: 992px) and ( min-width: 0px) {
     .btn-menu-res {
         font-size: 2rem;
     }
@@ -66,8 +72,10 @@
         display: block;
     }
     .header-nav-modal a{
-        color: black;
+        color: black!important;
         font-size: 1.8rem;
+    }
+    
     }
     .subnav-list {
         background-color: #fff;
