@@ -32,17 +32,17 @@
     left: -0.5rem;
     right: -0.5rem;
     height: 0.2rem;
-    background: #fff;
+    background: var(--white-color);
     display: none;
 }
 .header-nav-item a{
-    color: #fff;
+    color: var(--white-color);
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.75px;
 }
 .header-login a{
-    color: #fff;
+    color: var(--white-color);
     margin-left: 1.5rem;
     font-size: 1.8rem;
     font-weight: 300;
@@ -126,7 +126,7 @@
     outline: none;
     background: rgba(255,255,255,0.35);
     padding: 0.8rem;
-    color: #fff;
+    color: var(--white-color);
     top: -2rem;  box-sizing: border-box;
     display: none;
     font-size: 1.5rem;
@@ -161,12 +161,12 @@
 }
 .footer-item a{
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--white-color);
 }
 .footer-item button{
     border: none!important;
-    border: 1px solid #fff;
-    background-color: #fff;
+    border: 1px solid var(--white-color);
+    background-color: var(--white-color);
     border-top-right-radius:2px ;
     border-bottom-right-radius:2px ;
     padding: 0.4rem ;

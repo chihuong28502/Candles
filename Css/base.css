@@ -1,3 +1,9 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
 @keyframes growDown {
     0% {
         transform: scaleY(0)

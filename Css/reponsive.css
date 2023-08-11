@@ -1,11 +1,8 @@
 @media ( min-width: 64em) {
-    
 }
 @media (min-width: 1400px){
-
 }
 @media ( min-width: 993px) {
- 
     .header-nav-item:hover .subnav-list{
     display: block;
     }
@@ -14,10 +11,7 @@
     }
 }
 @media ( min-width: 768px) and ( max-width: 1400px) {
-    
 }
-
-
 /* mobile */
 @media ( max-width: 767.5px) {
     .offcanvas.offcanvas-start{
@@ -72,9 +66,6 @@
     .bar-respon{
         display: block;
     }
-    .offcanvas.offcanvas-start{
-        /* bottom: 30%; */
-    }
     .btn-menu-res {
         font-size: 2rem;
     }
@@ -104,10 +95,7 @@
         justify-content: center!important;
         padding: 0!important;
     }
-    
 }
-
-
 @media ( max-width: 46.1875em)and ( min-width: 0px) {
 
 }

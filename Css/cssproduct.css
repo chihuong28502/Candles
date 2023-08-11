@@ -1,7 +1,5 @@
 .product{
     margin: 7rem 0;
-    /* width: 100rem; */
-    
 }
 .slide-product-list{
     height: fit-content;
@@ -39,8 +37,6 @@
     transform: translateX(50%);
     
 }
-
-
 .description-head{
     border-bottom: 1px solid #d7d6d6;
 }
@@ -95,9 +91,6 @@
 .btn-order:hover button{
     background-color: rgb(158, 8, 8)!important;
 }
-.cart-quantity span{
-
-}
 .cart-quantity label{
     border: 1px solid rgb(204, 204, 204);
     padding: 0px 0.8rem;
@@ -113,9 +106,6 @@
 }
 .cart-title p{
     font-size: 1.8rem;
-}
-.model-cart {
-    
 }
 .cart-body p{
     font-size: 1.6rem;

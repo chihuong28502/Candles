@@ -37,14 +37,14 @@ modalShow.forEach((element, index)=>{
         }
     })
 
-var productFronts = document.querySelectorAll(".product-front");
-var productBack = document.querySelectorAll(".product-back");
-    // productFronts.forEach(function(productFront, index){
-    //     productFront.onclick = function(e){
-    //         e.target.classList.add('d-none')
+// var productFronts = document.querySelectorAll(".product-front");
+// var productBack = document.querySelectorAll(".product-back");
+//     productFronts.forEach(function(productFront, index){
+//         productFront.onclick = function(e){
+//             e.target.classList.add('d-none')
             
-    //     }
-    // })
+//         }
+//     })
 
 // var searchEvent = document.querySelector(".search-icon")
 //     searchEvent.onclick = function(){
@@ -125,7 +125,6 @@ var productBack = document.querySelectorAll(".product-back");
             var nameProduct = document.querySelector('.name-product').textContent;
             var sizeProduct = document.querySelector('.none-active.active-size').textContent;
             var quantityProduct = document.querySelector('#quantity').textContent;
-
             var bodyCart = document.querySelector('.offcanvas-body')
             bodyCart.innerHTML = bodyCart.innerHTML +`
             <div  class="cart-content w-100 mt-2">
@@ -174,7 +173,7 @@ var productBack = document.querySelectorAll(".product-back");
                 
             });
         }
- 
+//  
         // + quantity cart products
         
     // 

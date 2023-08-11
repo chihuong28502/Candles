@@ -6,14 +6,10 @@
     display: flex!important;
     align-items: center;
     justify-content: center;
-    
-
 }
 .slick-dots .slick-active button{
-    background-color: #fff;
-    border: 2px solid #000;
-
-
+    background-color: var(--white-color);
+    border: 2px solid var(--black-color);
 }
 .slick-dots li:hover button{
     background-color: red;

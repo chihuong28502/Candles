@@ -171,7 +171,7 @@
                             </div>
                         </div>
                         <div class="btn-order  w-100 mb-5">
-                            <button class=" add-product w-100 border-0 bg-black text-white" type="button">Add to cart</button>
+                            <button data-bs-toggle="offcanvas" data-bs-target="#showCart" class=" add-product w-100 border-0 bg-black text-white" type="button">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -286,6 +286,20 @@
             </div>
         </div>
         <!-- modal -->
+        <div class="px-4 offcanvas offcanvas-end" id="showCart">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">   
+                <div class="cart-title">
+                    <h2 class=" mb-4 cart-title">Giỏ hàng</h2>
+                    <p>Sản phẩm bao gồm: </p>
+                    <hr style="height: 2px;">
+                </div>
+                
+                
+            </div>
+        </div>
         <div class="offcanvas offcanvas-start  px-4 " id="menuBarResponsive" >
             <div class="offcanvas-header justify-content-end ">
                 <button type="button" class="btn-menu-res btn-close" data-bs-dismiss="offcanvas"></button>
