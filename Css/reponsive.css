@@ -4,8 +4,11 @@
 @media (min-width: 1400px){
 
 }
-@media ( min-width: 46.25em) and( max-width: 64em) {
-    
+@media ( min-width: 993px) {
+ 
+    .header-nav-item:hover .subnav-list{
+    display: block;
+    }
     .product-show-img{
         padding: 0!important;
     }
@@ -13,22 +16,13 @@
 @media ( min-width: 768px) and ( max-width: 1400px) {
     
 }
-@media ( max-width: 992px) {
-    .header{
-        height: auto;
-        padding: 1.2rem ;
-    }
-    .header-nav{
-        display: none!important;
-    }
-    .bar-respon{
-        display: block;
-    }
-    
-}
+
 
 /* mobile */
 @media ( max-width: 767.5px) {
+    .offcanvas.offcanvas-start{
+        width: 80%!important;
+    }
     .icon-responsive-none{
         display: none;
     }
@@ -65,24 +59,39 @@
 }
 
 @media ( max-width: 992px) and ( min-width: 0px) {
+    .offcanvas.offcanvas-start{
+        width: 60%!important;
+    }
+    .header{
+        height: auto;
+        padding: 1.2rem ;
+    }
+    .header-nav{
+        display: none!important;
+    }
+    .bar-respon{
+        display: block;
+    }
+    .offcanvas.offcanvas-start{
+        /* bottom: 30%; */
+    }
     .btn-menu-res {
         font-size: 2rem;
-    }
-    .subnav-list a {
-        display: block;
     }
     .header-nav-modal a{
         color: black!important;
         font-size: 1.8rem;
     }
-    
+    .header-nav-item a {
+        display: block;
+    }
+    .header-nav-item{
+        display: block;
     }
     .subnav-list {
-        background-color: #fff;
-        position: absolute;
         background-color: transparent;
+        position: relative;
         top: 100%;
-        
         left: 5%;
         border-left: 3px solid #ebebeb;
         display: none;
@@ -96,29 +105,9 @@
         padding: 0!important;
     }
     
+}
 
 
 @media ( max-width: 46.1875em)and ( min-width: 0px) {
-    .header-nav-item{
-    display: none;
-    }
-    .header-nav-item:first-child{
-        display: flex;
-    }
-    .login{
-        margin-bottom: 5rem;
-    }
-    .form-login ,.formsign-in{
-        width: 100%;
-    }
-    .form-login{
-        
-    }
-    
-    .footer-col p{
-        margin-top: 1rem;
-    }
-    .footer-col{
-        padding-bottom: 0!important;
-    }
+
 }

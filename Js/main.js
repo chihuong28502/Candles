@@ -15,6 +15,28 @@ function scrollFunction() {
         }
     }
 }
+const modalShow = document.querySelectorAll('.edit-modal')
+var modalBody = document.querySelectorAll('.offcanvas')
+modalShow.forEach((element, index)=>{
+        element.onclick = (e)=>{
+            let iconShowResponsive = e.target.children;
+            let nextSibling = e.target.nextElementSibling;
+            if(nextSibling.classList.contains('d-block')){
+                nextSibling.classList.add('d-none')
+                nextSibling.classList.remove('d-block')
+                iconShowResponsive[1].classList.add('unactive')
+                iconShowResponsive[1].classList.remove('active')
+                iconShowResponsive[0].classList.add('active')
+            }else{
+                nextSibling.classList.remove('d-none')
+                nextSibling.classList.add('d-block')
+                iconShowResponsive[0].classList.add('unactive')
+                iconShowResponsive[0].classList.remove('active')
+                iconShowResponsive[1].classList.add('active')
+            }
+        }
+    })
+
 var productFronts = document.querySelectorAll(".product-front");
 var productBack = document.querySelectorAll(".product-back");
     // productFronts.forEach(function(productFront, index){
@@ -34,7 +56,6 @@ var productBack = document.querySelectorAll(".product-back");
 
     const clickTarget =() => {
         body.onclick =(e) => {
-            // console.log(e.target.classList.value)
             if(e.target.classList.value.includes('fa-magnifying-glass') || e.target.classList.value.includes('my_check')){
                 document.querySelector('.fa-magnifying-glass').classList.add('d-none');
                 document.querySelector(".formSearch").classList.add('d-block');

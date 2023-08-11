@@ -60,9 +60,7 @@
     animation: growDown 0.3s ease-in-out forwards;
     transform-origin: top center;
 }
-.header-nav-item:hover .subnav-list{
-    display: block;
-}
+
 .subnav-item:hover a{
     color: #af141a;
     padding-left: 1.5rem;
@@ -84,7 +82,6 @@
     width: 35rem;
 }
 .slider-item img {
-    cursor: grab;
     object-fit: cover;
 }
 
@@ -193,6 +190,13 @@
 }
 .logo-footer{
     display: none;
+}
+.bar-respon{
+    display: none;
+}
+/* bar */
+.header-nav-item{
+    
 }
 
 
