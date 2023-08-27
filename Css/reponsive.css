@@ -1,16 +1,10 @@
-@media ( min-width: 64em) {
-}
-@media (min-width: 1400px){
-}
 @media ( min-width: 993px) {
     .header-nav-item:hover .subnav-list{
-    display: block;
+        display: block;
     }
     .product-show-img{
         padding: 0!important;
     }
-}
-@media ( min-width: 768px) and ( max-width: 1400px) {
 }
 /* mobile */
 @media ( max-width: 767.5px) {
@@ -95,7 +89,4 @@
         justify-content: center!important;
         padding: 0!important;
     }
-}
-@media ( max-width: 46.1875em)and ( min-width: 0px) {
-
 }

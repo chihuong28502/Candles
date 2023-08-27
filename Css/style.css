@@ -73,7 +73,6 @@
 }
 .slider{
     background-color: #dbdbdb;
-    
 }
 .header-icon{
     cursor: pointer;
@@ -101,7 +100,6 @@
 .product-list{
     cursor: grab;
 }
-
 .product-item{
     position: relative;
     cursor: pointer;
@@ -110,7 +108,6 @@
     position: absolute;
     display: none;
     top: 0; 
-
 }
 .product-item:hover .product-back{
     display: block!important;
@@ -131,7 +128,6 @@
     display: none;
     font-size: 1.5rem;
     transition: 0.4s ease-in-out;
-    
 }
 
 .search-onclick button i{
@@ -195,8 +191,6 @@
     display: none;
 }
 /* bar */
-.header-nav-item{
-    
-}
+
 
 

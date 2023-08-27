@@ -4,12 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../img/fav-icon.ico" type="image/x-icon" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
         <link rel="stylesheet" href="../Css/reset.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" href="../Css/base.css">
         <link rel="stylesheet" href="../Css/lirbary.css">
         <link rel="stylesheet" href="../Css/csslogin.css">
@@ -17,382 +21,445 @@
         <link rel="stylesheet" href="../Css/reponsive.css">
         <title>Candles</title>
     </head>
-    <body class="position-relative">
-        <header class="bg-black position-relative header-form-login justify-content-between align-items-center header container-fluid row">
-            <div class="bar-respon col-2 " >
-                <i class="text-white fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#menuBarResponsive"></i>
-            </div>
-            <div class="header-logo col-lg-2 col-8">
-                <a href="../index.html">
-                    <img class="w-100 object-fit-cover" src="../img/logo.webp" alt="logo">
-                </a>
-            </div>
-            <nav class="header-nav h-100 col-lg-8">
-                <ul class="header-nav-list h-100 d-flex justify-content-center flex-wrap">
-                    <li class="header-nav-item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Top</a>
-                        <ul class="subnav-list bg-black">
-                            <li class="subnav-item ">
-                                <a href="">T-Shift</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="">Polo</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="">SHIRTS</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="">SWEATERS</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="">HOODIES</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Bottom</a>
-                        <ul class="subnav-list bg-black">
-                            <li class="subnav-item">
-                                <a href="">PANTS</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="">SWEATPANTS</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="">SHORTS</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Outwear</a>
-                        <ul class="subnav-list bg-black">
-                            <li class="subnav-item">
-                                <a href="">JACKETS</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Sale</a>
-                        <ul class="subnav-list bg-black">
-                            <li class="subnav-item">
-                                <a href="">HIDDEN COMBO</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="">END OF FW22</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">ACCESSORIES</a>
-                        <ul class="subnav-list bg-black">
-                            <li class="subnav-item">
-                                <a href="">BAGS</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="">CAPS</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">About us</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-login justify-content-end col-2 col-lg-2 d-flex align-items-center">
-                <a  class="header-icon search-icon position-relative">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <div class="formSearch position-absolute search-onclick  end-0" style="display: none;">
-                        <form action="/search" class="position-relative">
-                            <input  class="my_check rounded-0" name="q" type="text" placeholder="Search...">
-                            <button class="btn position-absolute p-0 end-0" type="submit">
-                                <i class="fa-solid fa-magnifying-glass cursor-text"></i>
-                        </button>
+    <body>
+        <div class="app position-relative">
+            <header class="bg-black header-form-login justify-content-between align-items-center header container-fluid row">
+                <div class="bar-respon col-2 ">
+                    <i class="text-white fa-solid fa-bars"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#menuBarResponsive"></i>
+                </div>
+                <div class="header-logo col-lg-2 col-8">
+                    <a href="../index.html">
+                        <img class="w-100 object-fit-cover" src="../img/logo.webp"
+                            alt="logo">
+                    </a>
+                </div>
+                <nav class="header-nav h-100 col-lg-8">
+                    <ul class="header-nav-list h-100 d-flex justify-content-center flex-wrap">
+                        <li class="header-nav-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Top</a>
+                            <ul class="subnav-list bg-black">
+                                <li class="subnav-item ">
+                                    <a href>T-Shift</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href>Polo</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href>SHIRTS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href>SWEATERS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href>HOODIES</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Bottom</a>
+                            <ul class="subnav-list bg-black">
+                                <li class="subnav-item">
+                                    <a href>PANTS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href>SWEATPANTS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href>SHORTS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Outwear</a>
+                            <ul class="subnav-list bg-black">
+                                <li class="subnav-item">
+                                    <a href>JACKETS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Sale</a>
+                            <ul class="subnav-list bg-black">
+                                <li class="subnav-item">
+                                    <a href>HIDDEN COMBO</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href>END OF FW22</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">ACCESSORIES</a>
+                            <ul class="subnav-list bg-black">
+                                <li class="subnav-item">
+                                    <a href>BAGS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href>CAPS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">About us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div
+                    class="header-login justify-content-end col-2 col-lg-2 d-flex align-items-center">
+                    <a class="header-icon search-icon position-relative">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div
+                            class="formSearch position-absolute search-onclick  end-0"
+                            style="display: none;">
+                            <form action="/search" class="position-relative">
+                                <input class="my_check rounded-0" name="q"
+                                    type="text" placeholder="Search...">
+                                <button class="btn position-absolute p-0 end-0"
+                                    type="submit">
+                                    <i
+                                        class="fa-solid fa-magnifying-glass cursor-text"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </a>
+                    <a class="header-icon icon-responsive-none">
+                        <i class="fa-regular fa-circle-user"></i>
+                    </a>
+                    <a class="header-icon icon-responsive-none"
+                        data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </header>
+            <!-- header -->
+            <div class="container login row justify-content-between position-relative mb-5">
+                <div class="col-md-5 form-login">
+                    <div class="form formlog-in">
+                        <h2 class="text-decoration-underline font-weight-bold">Đăng
+                            nhập</h2>
+                        <form action>
+                            <ul class="list-getInfo">
+                                <li>
+                                    <input class="w-100" placeholder="Email"
+                                        type="email">
+                                </li>
+                                <li>
+                                    <input class="w-100" placeholder="Mật khẩu"
+                                        type="password" >
+                                </li>
+                                <li class="login-equal row align-items-center me-0">
+                                    <div class=" col-6 text-start">
+                                        <a href>
+                                            <label class="text-black">
+                                                Đăng nhập bằng
+                                            </label>
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                    </div>
+                                    <button
+                                        class="btn-form col-6 text-uppercase text-center border-0 ">Đăng
+                                        nhập</button>
+                                </li>
+                            </ul>
                         </form>
                     </div>
-                </a>
-                <a  class="header-icon icon-responsive-none">
-                    <i class="fa-regular fa-circle-user"></i>
-                </a>
-                <a class="header-icon icon-responsive-none"  data-bs-toggle="offcanvas" data-bs-target="#demo">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </a>
+                </div>
+                <div class="col-md-5 formsign-in mt-5">
+                    <div class="form ">
+                        <h2 class="text-decoration-underline font-weight-bold">Đăng
+                            ký</h2>
+                        <form action>
+                            <ul class="list-getInfo">
+                                <li>
+                                    <input class="w-100" placeholder="Email"
+                                        type="email" >
+                                </li>
+                                <li>
+                                    <input class="w-100" placeholder="Mật khẩu"
+                                        type="password" >
+                                </li>
+                                <li>
+                                    <input class="w-100"
+                                        placeholder="Nhập lại mật khẩu"
+                                        type="password" >
+                                </li>
+                                <li class="row  ms-0 me-0 justify-content-between">
+                                    <input class="col-7" placeholder="Email"
+                                        type="email" >
+                                    <input class="col-4" placeholder="Số điện thoại"
+                                        type="email" >
+                                </li>
+                                <li class="row  ms-0 me-0 justify-content-between">
+                                    <input class="col-7" placeholder="Ngày sinh"
+                                        type="text" >
+                                    <input class="col-4" placeholder="Giới tính"
+                                        type="text" >
+                                </li>
+                                <li class="row justify-content-end me-0">
+                                    <button
+                                        class="btn-form col-4 text-uppercase text-center border-0 ">Đăng
+                                        ký</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
             </div>
-            
-        </header>
-        <!-- header -->
-        <div class="container login row justify-content-between">
-            <div class="col-md-5 form-login">
-                <div class="form formlog-in">
-                    <h2>Đăng nhập</h2>
-                    <form action="">
-                        <ul class="list-getInfo">
-                            <li>
-                                <input class="w-100" placeholder="Email" type="email" name="" id="">
+            <!-- footer -->
+            <div class="container-fluid bg-black">
+                <div class="logo-footer col-md-3 mb-4 py-3 ">
+                    <img class="w-50" src="../img/logo.webp" alt>
+                </div>
+                <div
+                    class="footer-contain container mx-auto mt-3 row justify-content-between m-auto text-light flex-wrap py-md-5 pb-3">
+                    <div class="footer-col col-md-3 pb-4">
+                        <p>CANDLES</p>
+                        <ul>
+                            <li class="footer-item">
+                                <a href>CÔNG TY TNHH SẢN XUẤT VÀ KINH DOANH THƯƠNG
+                                    MẠI GNC</a>
                             </li>
-                            <li>
-                                <input class="w-100" placeholder="Mật khẩu" type="password" name="" id="">
+                            <li class="footer-item">
+                                <a href>Đại diện: Hoàng Duy Phong</a>
                             </li>
-                            <li class="login-equal row align-items-center me-0">
-                                <div class=" col-6 text-start">
-                                    <a href=""> <label class="text-black">
-                                        Đăng nhập bằng
-                                    </label>
-                                    <i class="fab fa-facebook-square"></i>
-                                    </a>
-                                </div>
-                                <button class="btn-form col-6">Đăng nhập</button>
+                            <li class="footer-item">
+                                <a href>Mã ĐKKD: 0110068360</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Ngày cấp: 21/07/2022</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Nơi cấp: Sở kế hoạch và đầu tư Hà Nội</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Địa chỉ: Số 258 Thái Hà, Đống Đa, Hà Nội</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Email: gnc.cp2022@gmail.com</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>0966.688.258</a>
                             </li>
                         </ul>
-                    </form>
-                    
-                </div>
-            </div>
-            <div class="col-md-5 formsign-in mt-5">
-                <div class="form ">
-                    <h2>Đăng ký</h2>
-                    <form action="">
-                        <ul class="list-getInfo">
-                            <li>
-                                <input class="w-100" placeholder="Email" type="email" name="" id="">
+                    </div>
+                    <div class="footer-col  col-md-2 pb-4">
+                        <p>HỖ TRỢ</p>
+                        <ul>
+                            <li class="footer-item">
+                                <a href>Kiểm tra đơn hàng</a>
                             </li>
-                            <li>
-                                <input class="w-100" placeholder="Mật khẩu" type="password" name="" id="">
+                            <li class="footer-item">
+                                <a href="./View/login.html">Đăng nhập</a>
                             </li>
-                            <li>
-                                <input class="w-100" placeholder="Nhập lại mật khẩu" type="password" name="" id="">
-                            </li>
-                            <li class="row  ms-0 me-0 justify-content-between">
-                                <input class="col-7" placeholder="Email" type="email" name="" id="">
-                                <input class="col-4" placeholder="Số điện thoại" type="email" name="" id="">
-                            </li>
-                            <li class="row  ms-0 me-0 justify-content-between">
-                                <input class="col-7" placeholder="Ngày sinh" type="text" name="" id="">
-                                <input class="col-4" placeholder="Giới tính" type="text" name="" id="">
-                            </li>
-                            <li class="row justify-content-end me-0">
-                                <button class="btn-form col-4">Đăng ký</button>
+                            <li class="footer-item">
+                                <a href="./View/login.html">Đăng ký</a>
                             </li>
                         </ul>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- footer -->
-        <div class="container-fluid bg-black">
-            <div class="logo-footer col-md-3 mb-4 py-3 ">
-                <img class="w-50" src="../img/logo.webp" alt="">
-            </div>
-            <div class="footer-contain container mx-auto mt-3 row justify-content-between m-auto text-light flex-wrap py-md-5 pb-3">
-                
-                <div class="footer-col col-md-3 pb-4">
-                    <p>CANDLES</p>
-                    <ul>
-                        <li class="footer-item">
-                            <a href="">CÔNG TY TNHH SẢN XUẤT VÀ KINH DOANH THƯƠNG MẠI GNC</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Đại diện: Hoàng Duy Phong</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Mã ĐKKD: 0110068360</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Ngày cấp: 21/07/2022</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Nơi cấp: Sở kế hoạch và đầu tư Hà Nội</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Địa chỉ: Số 258  Thái Hà, Đống Đa, Hà Nội</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Email: gnc.cp2022@gmail.com</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">0966.688.258</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col  col-md-2 pb-4">
-                    <p>HỖ TRỢ</p>
-                    <ul>
-                        <li class="footer-item">
-                            <a href="">Kiểm tra đơn hàng</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="./View/login.html">Đăng nhập</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="./View/login.html">Đăng ký</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col  col-md-2 pb-4">
-                    <p>CHÍNH SÁCH</p>
-                    <ul>
-                        <li class="footer-item">
-                            <a href="">Quy định thanh toán</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Chính sách bảo hành</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Chính sách đổi trả hàng</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Chính sách vận chuyển</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Chính sách mua hàng</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Chính sách kiểm hàng</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="">Chính sách bảo vệ thông tin người dùng</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col  col-md-2 pb-4">
-                    <p>GỬI EMAIL</p>
-                    <ul>
-                        <li class="footer-item">
-                            <p class="label-send-email">Gửi email nhận khuyến mãi</p>
-                        </li>
-                        <li class="footer-item">
-                            <form class= "d-flex justify-content-start position-relative" action="">
-                                <input placeholder="Email..." type="email" name="email" id="email">
-                                <button class=""><i class=" fa-solid fa-chevron-right"></i></button>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col  col-md-2">
-                    <p>KẾT NỐI</p>
-                    <ul class="list-item-social d-flex">
-                        <li class="footer-item me-4">
-                            <a href="">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="footer-item me-4">
-                            <a href=""><i class="fa-brands fa-youtube"></i></a>
-                        </li>
-                        <li class="footer-item me-4">
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                    </ul>
+                    </div>
+                    <div class="footer-col  col-md-2 pb-4">
+                        <p>CHÍNH SÁCH</p>
+                        <ul>
+                            <li class="footer-item">
+                                <a href>Quy định thanh toán</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Chính sách bảo hành</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Chính sách đổi trả hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Chính sách vận chuyển</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Chính sách mua hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Chính sách kiểm hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href>Chính sách bảo vệ thông tin người dùng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col  col-md-2 pb-4">
+                        <p>GỬI EMAIL</p>
+                        <ul>
+                            <li class="footer-item">
+                                <p class="label-send-email">Gửi email nhận khuyến
+                                    mãi</p>
+                            </li>
+                            <li class="footer-item">
+                                <form
+                                    class="d-flex justify-content-start position-relative"
+                                    action>
+                                    <input placeholder="Email..." type="email"
+                                        name="email" id="email">
+                                    <button class><i
+                                            class=" fa-solid fa-chevron-right"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col  col-md-2">
+                        <p>KẾT NỐI</p>
+                        <ul class="list-item-social d-flex">
+                            <li class="footer-item me-4">
+                                <a href>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer-item me-4">
+                                <a href><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li class="footer-item me-4">
+                                <a href><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- modal -->
-        <div class="offcanvas offcanvas-start  px-4 " id="menuBarResponsive" >
-                <div class="offcanvas-header justify-content-end ">
-                    <button type="button" class="btn-menu-res btn-close" data-bs-dismiss="offcanvas"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <nav class="header-nav-modal ">
-                        <ul class="header-nav-list">
-                            <li class="py-3 header-nav-item edit-modal ">
-                                <a class="d-flex align-items-center justify-content-between" href="#">HOME
-                                    <i class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
-                                    <i class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
-                                </a>
-                            </li>
-                            <li class=" py-3 header-nav-item edit-modal ">
-                                <a class="d-flex align-items-center justify-content-between" href="#">TOP
-                                    <i class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
-                                    <i class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
-                                </a>
-                                <ul class="subnav-list position-relative">
-                                    <li class="subnav-item ">
-                                        <a href="#">T-Shift</a>
-                                    </li>
-                                    <li class="subnav-item">
-                                        <a href="#">Polo</a>
-                                    </li>
-                                    <li class="subnav-item">
-                                        <a href="#">SHIRTS</a>
-                                    </li>
-                                    <li class="subnav-item">
-                                        <a href="#">SWEATERS</a>
-                                    </li>
-                                    <li class="subnav-item">
-                                        <a href="#">HOODIES</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=" py-3 header-nav-item edit-modal ">
-                                <a class="d-flex align-items-center justify-content-between" href="#">BOTTOM
-                                    <i class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
-                                    <i class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
-                                </a>
-                                <ul class="subnav-list  position-relative">
-                                    <li class="subnav-item">
-                                        <a href="#">PANTS</a>
-                                    </li>
-                                    <li class="subnav-item">
-                                        <a href="#">SWEATPANTS</a>
-                                    </li>
-                                    <li class="subnav-item">
-                                        <a href="#">SHORTS</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=" py-3 header-nav-item edit-modal">
-                                <a class="d-flex align-items-center justify-content-between" href="#">OUTWEAR
-                                    <i class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
-                                    <i class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
-                                </a>
-                                <ul class="subnav-list  position-relative">
-                                    <li class="subnav-item  ">
-                                        <a href="">JACKETS</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=" py-3 header-nav-item edit-modal">
-                                <a class="d-flex align-items-center justify-content-between" href="#">SALE
-                                    <i class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
-                                    <i class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
-                                </a>
-                                <ul class="subnav-list  position-relative">
-                                    <li class="subnav-item">
-                                        <a href="#">HIDDEN COMBO</a>
-                                    </li>
-                                    <li class="subnav-item">
-                                        <a href="#">END OF FW22</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=" py-3 header-nav-item edit-modal">
-                                <a class="d-flex align-items-center justify-content-between" href="#">ACCESSORIES
-                                    <i class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
-                                    <i class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
-                                </a>
-                                <ul class="subnav-list  position-relative">
-                                    <li class="subnav-item">
-                                        <a href="#">BAGS</a>
-                                    </li>
-                                    <li class="subnav-item">
-                                        <a href="#">CAPS</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=" py-3 header-nav-item edit-modal">
-                                <a class="d-flex align-items-center justify-content-between" href="#">ABOUT US
-                                    <i class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
-                                    <i class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="offcanvas offcanvas-start  px-4 " id="menuBarResponsive">
+            <div class="offcanvas-header justify-content-end ">
+                <button type="button" class="btn-menu-res btn-close"
+                    data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="header-nav-modal ">
+                    <ul class="header-nav-list">
+                        <li class="py-3 header-nav-item edit-modal ">
+                            <a
+                                class="d-flex align-items-center justify-content-between"
+                                href="#">HOME
+                                <i
+                                    class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
+                                <i
+                                    class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
+                            </a>
+                        </li>
+                        <li class=" py-3 header-nav-item edit-modal ">
+                            <a
+                                class="d-flex align-items-center justify-content-between"
+                                href="#">TOP
+                                <i
+                                    class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
+                                <i
+                                    class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
+                            </a>
+                            <ul class="subnav-list position-relative">
+                                <li class="subnav-item ">
+                                    <a href="#">T-Shift</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href="#">Polo</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href="#">SHIRTS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href="#">SWEATERS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href="#">HOODIES</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" py-3 header-nav-item edit-modal ">
+                            <a
+                                class="d-flex align-items-center justify-content-between"
+                                href="#">BOTTOM
+                                <i
+                                    class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
+                                <i
+                                    class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
+                            </a>
+                            <ul class="subnav-list  position-relative">
+                                <li class="subnav-item">
+                                    <a href="#">PANTS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href="#">SWEATPANTS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href="#">SHORTS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" py-3 header-nav-item edit-modal">
+                            <a
+                                class="d-flex align-items-center justify-content-between"
+                                href="#">OUTWEAR
+                                <i
+                                    class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
+                                <i
+                                    class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
+                            </a>
+                            <ul class="subnav-list  position-relative">
+                                <li class="subnav-item  ">
+                                    <a href>JACKETS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" py-3 header-nav-item edit-modal">
+                            <a
+                                class="d-flex align-items-center justify-content-between"
+                                href="#">SALE
+                                <i
+                                    class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
+                                <i
+                                    class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
+                            </a>
+                            <ul class="subnav-list  position-relative">
+                                <li class="subnav-item">
+                                    <a href="#">HIDDEN COMBO</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href="#">END OF FW22</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" py-3 header-nav-item edit-modal">
+                            <a
+                                class="d-flex align-items-center justify-content-between"
+                                href="#">ACCESSORIES
+                                <i
+                                    class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
+                                <i
+                                    class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
+                            </a>
+                            <ul class="subnav-list  position-relative">
+                                <li class="subnav-item">
+                                    <a href="#">BAGS</a>
+                                </li>
+                                <li class="subnav-item">
+                                    <a href="#">CAPS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" py-3 header-nav-item edit-modal">
+                            <a
+                                class="d-flex align-items-center justify-content-between"
+                                href="#">ABOUT US
+                                <i
+                                    class="fa-solid fa-chevron-down icon-down-nav-responsive active"></i>
+                                <i
+                                    class="fa-solid fa-chevron-up unactive icon-up-nav-responsive"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <script
             type="text/javascript"

@@ -1,17 +1,12 @@
 .login{
     margin: auto;
-    padding-top: 7rem;
+    padding-top: 11rem;
     text-align: center;
 }
 .form h2{
-    color: #000;
+    color: var(--black-color);
     font-size: 1.8rem;
-    text-decoration: underline;
-    font-weight: 700;
     margin-bottom: 3rem;
-}
-.login{
-    position: relative;
 }
 .list-getInfo input{
     outline: none;
@@ -32,8 +27,6 @@
     transform: translateX(-50%);
 }
 .btn-form{
-    text-transform: uppercase;
-    text-align: center;
     background-color: red;
     color: var(--white-color);
     padding: 12px 0;

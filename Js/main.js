@@ -21,36 +21,30 @@ modalShow.forEach((element, index)=>{
         element.onclick = (e)=>{
             let iconShowResponsive = e.target.children;
             let nextSibling = e.target.nextElementSibling;
+            
             if(nextSibling.classList.contains('d-block')){
                 nextSibling.classList.add('d-none')
                 nextSibling.classList.remove('d-block')
                 iconShowResponsive[1].classList.add('unactive')
                 iconShowResponsive[1].classList.remove('active')
+                
                 iconShowResponsive[0].classList.add('active')
+                iconShowResponsive[0].classList.remove('unactive')
             }else{
                 nextSibling.classList.remove('d-none')
                 nextSibling.classList.add('d-block')
+
+
                 iconShowResponsive[0].classList.add('unactive')
                 iconShowResponsive[0].classList.remove('active')
+
                 iconShowResponsive[1].classList.add('active')
+                iconShowResponsive[1].classList.remove('unactive')
             }
         }
     })
 
-// var productFronts = document.querySelectorAll(".product-front");
-// var productBack = document.querySelectorAll(".product-back");
-//     productFronts.forEach(function(productFront, index){
-//         productFront.onclick = function(e){
-//             e.target.classList.add('d-none')
-            
-//         }
-//     })
-
-// var searchEvent = document.querySelector(".search-icon")
-//     searchEvent.onclick = function(){
-//         document.querySelector('.fa-magnifying-glass').classList.add('d-none')
-//         document.querySelector(".search-onclick").classList.add('d-flex')
-//     }
+    // icon search button
     var body = document.querySelector("body")
 
 
@@ -70,113 +64,120 @@ modalShow.forEach((element, index)=>{
         }
     }
     clickTarget()
-    // choice Size
-    const clickSize = document.querySelectorAll('.none-active')
-    const clickSizeLength = clickSize.length;
-    clickSize.forEach((element)=>{
-        element.onclick = (click)=>{
-                let removeSelectSize = document.querySelector('.none-active.active-size')
-                removeSelectSize.classList.remove('active-size')
-                click.target.classList.add('active-size')
-            }
+    // // choice Size
+    // const clickSize = document.querySelectorAll('.none-active')
+    // const clickSizeLength = clickSize.length;
+    // clickSize.forEach((element)=>{
+    //     element.onclick = (click)=>{
+    //             let removeSelectSize = document.querySelector('.none-active.active-size')
+    //             removeSelectSize.classList.remove('active-size')
+    //             click.target.classList.add('active-size')
+    //         }
         
-    });
-// + - products
-    const numbersQuantity = document.querySelector('#quantity');
-    const addNumbersQuantity = document.querySelectorAll('.add-quantity')
-    const subNumbersQuantity = document.querySelectorAll('.sub-quantity')
-    var quantity = parseInt(numbersQuantity.textContent)
+    // });
+// // + - products
+//     const numbersQuantity = document.querySelector('#quantity');
+//     const addNumbersQuantity = document.querySelectorAll('.add-quantity')
+//     const subNumbersQuantity = document.querySelectorAll('.sub-quantity')
+//     var quantity = parseInt(numbersQuantity.textContent)
     
-    addNumbersQuantity.forEach((element)=>{
+//     addNumbersQuantity.forEach((element)=>{
         
-        element.onclick = ()=>{
-            quantity++;
-            numbersQuantity.innerHTML = `${quantity}`;
-        }
+//         element.onclick = ()=>{
+//             quantity++;
+//             numbersQuantity.innerHTML = `${quantity}`;
+//         }
         
-    });
-    subNumbersQuantity.forEach((element)=>{
-        element.onclick = ()=>{
-            if(quantity < 1){
-                quantity=0;
+//     });
+//     subNumbersQuantity.forEach((element)=>{
+//         element.onclick = ()=>{
+//             if(quantity < 1){
+//                 quantity=0;
                 
-            }else{
-                quantity--;
-            }
-            numbersQuantity.innerHTML = `${quantity}`;
-        }
+//             }else{
+//                 quantity--;
+//             }
+//             numbersQuantity.innerHTML = `${quantity}`;
+//         }
         
-    });
-// 
-    // click show image model
-    const imgAllModel = document.querySelectorAll('.slide-product-item img')
-    imgAllModel.forEach((element)=>{
-        element.onclick= (item) =>{
-            var src = item.target.getAttribute('src')
-            document.querySelector('.img-show').innerHTML = ` <img class="w-100" src="${src}" alt="">`
+//     });
+// // 
+//     // click show image model
+//     const imgAllModel = document.querySelectorAll('.slide-product-item img')
+//     imgAllModel.forEach((element)=>{
+//         element.onclick= (item) =>{
+//             var src = item.target.getAttribute('src')
+//             document.querySelector('.img-show').innerHTML = ` <img class="w-100" src="${src}" alt="">`
             
-        }
-    })
-// 
-    const btnAddProduct = document.querySelector('.add-product');
+//         }
+//     })
+// // 
+//     const btnAddProduct = document.querySelector('.add-product');
     
     
-        btnAddProduct.onclick = ()=>{
-            var nameProduct = document.querySelector('.name-product').textContent;
-            var sizeProduct = document.querySelector('.none-active.active-size').textContent;
-            var quantityProduct = document.querySelector('#quantity').textContent;
-            var bodyCart = document.querySelector('.offcanvas-body')
-            bodyCart.innerHTML = bodyCart.innerHTML +`
-            <div  class="cart-content w-100 mt-2">
-                <div class="cart-body">
-                    <div class="row justify-content-between align-items-center">
-                        <p class="col-8 cart-name">${nameProduct}</p>
-                        <p class="col-4 cart-size text-end pe-5">${sizeProduct}</p>
-                    </div>
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-3">
-                            <img class="w-100" src="../img/img-product/product-front.jpeg" alt="">
-                        </div>
-                        <div class="col-9 d-flex  justify-content-end">
-                            <div class="cart-quantity d-flex align-items-center">
-                                <label class="sub-quantity-cart  text-center">-</label>
-                                <span id="quantity-cart" class="text-center" name="quantity" >${quantityProduct}</span>
-                                <label class="add-quantity-cart  text-center b">+</label>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="cart-price">390,000 VNĐ</p>
-                </div>
-            </div>
-            `;
-            const numbersQuantityCart = document.querySelector('#quantity-cart');
-            const addNumbersQuantityCart = document.querySelectorAll('.add-quantity-cart')
-            const subNumbersQuantityCart = document.querySelectorAll('.sub-quantity-cart')
-            const numbersQuantityCartValue = document.querySelector('#quantity-cart').textContent;
-            var  quantityCart = parseInt(numbersQuantityCartValue)
-            addNumbersQuantityCart.forEach((element)=>{
-                element.onclick = ()=>{
-                    quantityCart++;
-                    numbersQuantityCart.innerHTML = `${quantityCart}`;
-                }
-            });
-            subNumbersQuantityCart.forEach((element)=>{
-                element.onclick = ()=>{
-                    if(quantityCart < 1){
-                        quantityCart=0;
+//         btnAddProduct.onclick = ()=>{
+            
+
+//             var nameProduct = document.querySelector('.name-product').textContent;
+//             var sizeProduct = document.querySelector('.none-active.active-size').textContent;
+//             var quantityProduct = document.querySelector('#quantity').textContent;
+//             var bodyCart = document.querySelector('.offcanvas-body')
+//             bodyCart.innerHTML = bodyCart.innerHTML +`
+//             <div  class="cart-content w-100 mt-2">
+//                 <div class="cart-body">
+//                     <div class="row justify-content-between align-items-center">
+//                         <p class="col-8 cart-name">${nameProduct}</p>
+//                         <p class="col-4 cart-size text-end pe-5">${sizeProduct}</p>
+//                     </div>
+//                     <div class="row justify-content-between align-items-center">
+//                         <div class="col-3">
+//                             <img class="w-100" src="../img/img-product/product-front.jpeg" alt="">
+//                         </div>
+//                         <div class="col-9 d-flex  justify-content-end">
+//                             <div class="cart-quantity d-flex align-items-center">
+//                                 <label class="sub-quantity-cart  text-center">-</label>
+//                                 <span id="quantity-cart" class="text-center" name="quantity" >${quantityProduct}</span>
+//                                 <label class="add-quantity-cart  text-center b">+</label>
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <p class="cart-price">390,000 VNĐ</p>
+//                 </div>
+//             </div>
+//             `;
+//             const numbersQuantityCart = document.querySelector('#quantity-cart');
+//             const addNumbersQuantityCart = document.querySelectorAll('.add-quantity-cart')
+//             const subNumbersQuantityCart = document.querySelectorAll('.sub-quantity-cart')
+//             const numbersQuantityCartValue = document.querySelector('#quantity-cart').textContent;
+//             var  quantityCart = parseInt(numbersQuantityCartValue)
+//             addNumbersQuantityCart.forEach((element)=>{
+//                 element.onclick = ()=>{
+//                     quantityCart++;
+//                     numbersQuantityCart.innerHTML = `${quantityCart}`;
+//                 }
+//             });
+//             subNumbersQuantityCart.forEach((element)=>{
+//                 element.onclick = ()=>{
+//                     if(quantityCart < 1){
+//                         quantityCart=0;
                         
-                    }else{
-                        quantityCart--;
-                    }
-                    numbersQuantityCart.innerHTML = `${quantityCart}`;
-                }
+//                     }else{
+//                         quantityCart--;
+//                     }
+//                     numbersQuantityCart.innerHTML = `${quantityCart}`;
+//                 }
                 
-            });
-        }
-//  
-        // + quantity cart products
+//             });
+//             // var  product = JSON.stringify(nameProduct)
+//             // localStorage.setItem('product', product)
+//         }
         
-    // 
+
+
+
+
+
+
     // render products list
 //     var listProducts = [
 //         {
@@ -286,46 +287,4 @@ modalShow.forEach((element, index)=>{
 //         }
 //     ];
     
-//     function setupHtml(arr){
-//         var view = `
-//         <div class="list-product-item col-3">
-//             <div class="m-5 col product-item">
-//                 <div class="product-img">
-//                     <img class="w-100 product-front" src="${arr.ImageFront}" alt="">
-//                     <img class="w-100 product-back d-none" src="${arr.ImageBackend}" alt="">
-//                 </div>
-//                 <div class="product-description">
-//                     <h3>${arr.name}</h3>
-//                     <p><span>${arr.price}</span></p>
-//                 </div>
-//             </div>
-//             <div class="m-5 col product-item">
-//                 <div class="product-img">
-//                     <img class="w-100 product-front" src="${arr.ImageFront}" alt="">
-//                     <img class="w-100 product-back d-none" src="${arr.ImageBackend}" alt="">
-//                 </div>
-//                 <div class="product-description">
-//                     <h3>${arr.name}</h3>
-//                     <p><span>${arr.price}</span></p>
-//                 </div>
-//             </div>
-//             <div class="m-5 col product-item">
-//                 <div class="product-img">
-//                     <img class="w-100 product-front" src="${arr.ImageFront}" alt="">
-//                     <img class="w-100 product-back d-none" src="${arr.ImageBackend}" alt="">
-//                 </div>
-//                 <div class="product-description">
-//                     <h3>${arr.name}</h3>
-//                     <p><span>${arr.price}</span></p>
-//                 </div>
-//             </div>
-//         </div>
-//         `
-//         $('.product-list').append(view)
-//     }
-//     function renderHtml(){
-//         for(var i = 0; i <listProducts.length; i++){
-//             setupHtml(listProducts[i])
-//         }
-//     }
-// renderHtml()
+//     
